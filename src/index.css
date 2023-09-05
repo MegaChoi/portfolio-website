@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+.typeWriterText {
+    font-family: 'Rubik';
+    font-size: 1.5rem/* 24px */;
+    line-height: 2rem/* 32px */;
+    font-weight: 300;
+}
+.wrapper {
+    perspective: 1500px;
+}
+  
+.video {
+    width: 100%;
+    height: 100%;
+    background-color: #3498db;
+    color: #fff;
+    transform: rotateY(15deg) translateZ(100px);
+    transform-origin: center center;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.video:hover {
+transform: rotateY(0deg) translateZ(0);
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
